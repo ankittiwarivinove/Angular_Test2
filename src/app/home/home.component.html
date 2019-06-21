@@ -1,0 +1,18 @@
+<div class="col-md-6 col-md-offset-3">
+    <h1>Hi {{currentUser.firstName}}!</h1>
+    <p>You're logged</p>
+   
+    
+    <!-- <ul>
+        <li *ngFor="let user of users">
+            {{user.username}} ({{user.firstName}} {{user.lastName}})
+            - <a (click)="deleteUser(user.id)">Delete</a>
+        </li>
+    </ul> -->
+    <div class="">
+    <a [routerLink]="['/userList']" class="btn btn-link "> <button class="btn btn-primary">View User List</button></a>
+    <a [routerLink]="['/addNewUser']" class="btn btn-link "> <button class="btn btn-primary">Add New User</button></a>
+    <a [routerLink]="['/login']" class="btn btn-link "><button class="btn btn-primary">Logout</button></a>
+   
+    </div>
+</div>

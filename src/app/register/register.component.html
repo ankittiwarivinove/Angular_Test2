@@ -1,0 +1,27 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2> Welcome On User List</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody *ngFor="let user of users">
+            <tr>
+
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.username}}</td>
+                <a (click)="deleteUser(user.id)"><td>Delete</td></a>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <a [routerLink]="['/Home']" class="btn btn-link"><button class="btn btn-primary">Return</button></a>
+</div>
