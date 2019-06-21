@@ -17,6 +17,7 @@ import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { AddNewUserComponent } from './add-new-user/add-new-user.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
     imports: [
@@ -31,7 +32,8 @@ import { AddNewUserComponent } from './add-new-user/add-new-user.component';
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        AddNewUserComponent
+        AddNewUserComponent,
+        UserListComponent
     ],
     providers: [
         AuthGuard,
